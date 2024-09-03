@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: wheat;
+    color: #333;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column; /* Flex öğelerini alt alta sıralar (block gibi) */
+    align-items: center; /* Justify-content ile kullanılınca dikeyde ortalar. Flex-direction ile kullanılınca yatayda ortalar. */
+    width: 50%;
+    height: 90%;
+    margin-top: 1vh;
+}
+
+.mainContainer header {
+    text-align: center;
+    width: 50%;
+    height: 8em;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    white-space: nowrap;;
+}
+
+.mainContainer .textContainer {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 70%;
+}
+
+.mainContainer .hrContainer {
+    width: 100%;
+    height: 10%;
+    margin-top: 0.5em;
+}
+
+.mainContainer hr {
+    border: 0.5px solid rgba(83, 54, 0, 0.077);
+    border-radius: 2vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main .inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+}
+
+main .inputContainer input {
+    width: 50%;
+    height: 80%;
+    font-size: 1em;
+    padding: 0.5em;
+    border: 0.5px solid rgba(228, 148, 0, 0.819);
+    border-radius: 2vh;
+}
+
+main .inputContainer button {
+    width: 10%;
+    height: 80%;
+    font-size: 1em;
+    margin-left: 1em;
+    border: none;
+    border-radius: 2vh;
+    background-color: rgba(228, 148, 0, 0.819);
+    color: #ffffff;
+}
+
+main .inputContainer button:hover {
+    background-color: rgba(228, 148, 0, 0.5);
+}
+
+main .inputContainer button:active {
+    background-color: rgba(228, 148, 0, 0.819);
+}
+
+main .listContainer {
+    width: 100%;
+    height: 88%;
+    background-color: rgb(252, 212, 138);
+    border-radius: 2vh;
+    overflow: hidden; /* Taşan kısımları gizler */
+    overflow-y: scroll; /* Taşan kısımlar için aşağı doğru kaydırma çubuğu ekler */
+}
+
+::-webkit-scrollbar {
+    width: 10px;  /* Scroll bar genişliği */
+    height: 5px; /* Scroll bar yüksekliği */
+}
+
+/* Scroll barın arka planı */
+::-webkit-scrollbar-track {
+    background: rgb(199, 163, 97); /* Arka planı siyah yap */
+    border-radius: 2vh; /* Köşeleri yuvarla */
+}
+
+
+li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 0.5em;
+    margin-top: 1vh;
+    padding-left: 1vh;
+    border-radius: 2vh;
+    width: 98%;
+    height: 2em;
+    background-color: rgba(255, 255, 255, 0.479);
+    text-decoration: none;
+    list-style-type: none;
+}
