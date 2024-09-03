@@ -16,3 +16,9 @@ document.querySelector('.elementList').appendChild(listCreate);
 inputField.value = ''; // input alanını temizler.
 
 });
+
+document.querySelector('#inputField').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        document.querySelector('#addButton').click();
+    }
+});
