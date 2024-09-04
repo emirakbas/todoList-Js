@@ -11,7 +11,15 @@ const listCreate = document.createElement('li');
 console.log(listCreate);
 listCreate.textContent = listElement;
 
+const deleteButton = document.createElement('button');
+deleteButton.textContent = 'Sil';
+
+listCreate.appendChild(deleteButton); // Oluşturulan li elementinin 'içine' butonu ekler.
 document.querySelector('.elementList').appendChild(listCreate);
+
+deleteButton.addEventListener('click', function() {
+    listCreate.remove();
+}); // Sil butonuna tıklanınca elementList içinde oluşturulan li elementini siler.
 
 inputField.value = ''; // input alanını temizler.
 
