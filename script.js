@@ -8,7 +8,6 @@ document.querySelector('#addButton').addEventListener('click', function() {
     }
 
 const listCreate = document.createElement('li');
-console.log(listCreate);
 listCreate.textContent = listElement;
 
 const deleteButton = document.createElement('button');
@@ -29,4 +28,11 @@ document.querySelector('#inputField').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         document.querySelector('#addButton').click();
     }
+});
+
+document.querySelector('#deleteAllButton').addEventListener('click', function() {
+    document.querySelectorAll('.elementList').forEach(function(item) {
+        console.log(item);
+        item.remove();
+    });
 });

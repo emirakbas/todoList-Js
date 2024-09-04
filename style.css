@@ -145,3 +145,19 @@ li button {
     width: 5em;
     color: white;
 }
+
+#deleteAllButton {
+    background-color: white;
+    border: 0.2vh solid red;
+    color : red;
+}
+
+#deleteAllButton:hover {
+    background-color: red;
+    color: white;
+}
+
+#deleteAllButton:active {
+    background-color: white;
+    color: red;
+}
