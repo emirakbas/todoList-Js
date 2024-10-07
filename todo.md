@@ -1,0 +1,1 @@
+Öğeleri ekledikten sonra tümünü sil yapıp ardından tekrar ekleme işlemi yapmaya çalıştığımızda ekleme yapılamıyor. Bunu düzelt. (Konsolda hatayı görebilirsin.)
